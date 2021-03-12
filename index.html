@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries API</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body class="font-body text-xl text-gray-600 bg-gray-300">
+    <!-- Main App Container-->
+    <div class="w-full md:w-4/5 mx-auto">
+        <h1 class="text-center uppercase md:my-8 font-bold border-b-4 border-gray-600 text-3xl">Rest Countries API</h1>
+        <div>
+            <div>
+                <div class="md:flex md:justify-between md:items-center">
+                    <input type="text" placeholder="Search a country"
+                        class="rounded-md w-full md:w-auto border-none p-2 shadow-lg" id="search">
+                    <div id="dropdown" class="bg-white shadow-lg p-2 relative cursor-pointer rounded-md">
+                        Filter by region <i class="ml-8 fa fa-chevron-down"></i>
+                        <ul id="menu"
+                            class="absolute p-2 w-full bg-gray-200 rounded-md shadow-lg top-full list-none hidden">
+                            <li class="my-5 mx-0">Africa</li>
+                            <li class="my-5 mx-0">Americas</li>
+                            <li class="my-5 mx-0">Asia</li>
+                            <li class="my-5 mx-0">Europe</li>
+                            <li class="my-5 mx-0">Oceania</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- container for the cards -->
+                <div id="countries-container" class="md:grid md:grid-cols-3 md:gap-10 text-center md:text-left md:mt-8">
+                    <p>Countries Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
